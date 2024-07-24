@@ -1,0 +1,163 @@
+.timeline-section {
+    background-color: #000; /* Latar belakang hitam */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 31px;
+    width: 2px;
+    background: #FFBD39;
+    height: 100%;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 0 0 30px 0;
+    padding: 0 0 0 50px;
+}
+
+.timeline-item .timeline-badge {
+    position: absolute;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+    background: #FFBF39;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #000;
+}
+
+.timeline-item .timeline-panel {
+    background: #212121;
+    border: 1px solid #FFBD39;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.timeline-item .timeline-heading {
+    margin-bottom: 10px;
+}
+
+.timeline-item .timeline-title {
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.timeline-item .timeline-body {
+    color: #b0b0b0;
+}
+
+@media (max-width: 767px) {
+    .timeline-item {
+        padding-left: 20px;
+    }
+
+    .timeline-item .timeline-badge {
+        left: 10px;
+    }
+}
+
+.services-1 {
+    transition: transform 0.3s ease;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.services-1:hover {
+    transform: translateY(-10px);
+}
+
+.services-1.web-dev {
+    background-color: #007bff; /* Blue */
+}
+
+.services-1.system-analyst {
+    background-color: #28a745; /* Green */
+}
+
+.services-1.designer {
+    background-color: #ca1121; /* Yellow */
+}
+.email-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #FFBD39;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .email-button:hover {
+    background-color: #ad9a08;
+    transform: translateY(-3px);
+  }
+  .ftco-footer {
+    background-color: #000;
+    padding: 30px 0;
+    color: #fff;
+  }
+
+  .ftco-footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  #ftco-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .circular {
+    animation: rotate 2s linear infinite;
+  }
+
+  .path-bg {
+    stroke: #eeeeee;
+  }
+
+  .path {
+    stroke: #F96D00;
+    stroke-dasharray: 150;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 150;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -125;
+    }
+  }
